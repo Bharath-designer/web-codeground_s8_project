@@ -1,0 +1,30 @@
+.app-container {
+    width: 90%;
+    height: 100vh;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-frame{
+    overflow: auto;
+    flex: 1;
+}
+
+
+
+.level-map-popup{
+    background-color: rgb(185, 185, 185);
+}
+  
+
+@media screen and (orientation:portrait) {
+    
+
+.main-frame{
+    flex: 1;
+}
+  
+    
+}

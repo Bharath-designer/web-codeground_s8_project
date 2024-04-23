@@ -1,0 +1,384 @@
+.icard-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 400;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.601);
+  overflow: hidden;
+
+}
+
+
+.icard-container .icard-close {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.641);
+  position: fixed;
+}
+
+.icard-container .icard {
+  width: min(850px, 90%);
+  background-color: white;
+  height: fit-content;
+  max-height: 80% ;
+  z-index: 500;
+  padding: 20px;
+  margin: 100px 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.icard-container .icard h2{
+  width: 100%;
+  
+}
+
+.icard-container .icard img{
+  width: min(400px,90%);
+  margin: 20px 0 ;
+}
+
+.icard-container .icard .hint-content{
+  width: 90%;
+  margin: 15px auto 0px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.icard-container .icard .hint-content ul li, .icard-container .icard .hint-content ol:not(.icard-css-props) li{
+
+  margin: 20px 0;
+
+}
+
+
+.icard-container .icard .hint-content .icard-css-props{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.icard-container .icard .hint-content .icard-css-props p{
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+
+.css-prop{
+  padding: 1px 5px;
+color: #EA047E;
+  background: #e7e7e7;
+  border-radius: 3px;
+  white-space: nowrap;
+  user-select: none;
+}
+
+
+.game-container {
+  height: 96%;
+  display: flex;
+}
+
+.game-container .game-input {
+  flex: 1;
+  margin-right: 2%;
+  background-color: rgb(230, 230, 230);
+  overflow: auto;
+  padding-bottom: 30px;
+}
+
+.game-container .game-output {
+  overflow: auto;
+  flex: 1;
+  margin-left: 2%;
+  background-color: rgb(230, 230, 230);
+}
+
+.game-container .game-input-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: min(5%, 30px);
+  background-color: white;
+  padding-bottom: 20px;
+  min-height: 95%;
+  box-shadow: 0 0 10px black;
+}
+
+
+.game-container .game-input-top-row-one {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+  align-items: flex-start;
+}
+
+.game-icard {
+  flex-basis: 30px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  animation: rotateAnimate 2.3s forwards ease-in-out;
+  animation-delay: 0.8s;
+
+}
+
+.game-icard {
+  font-size: 30px;
+}
+
+
+.game-icard:active {
+  color: rgb(44, 44, 44);
+}
+
+
+@keyframes rotateAnimate {
+
+  30%{
+    color: #FF7000;
+  }
+
+  50%{
+      scale: 1.4;
+  }
+
+  80%{
+    color: #FF7000;
+  }
+ 
+  100%{
+      transform: rotate(360deg) ;
+  }
+  
+}
+
+
+
+
+.game-input-top-row-inputs {
+  width: 90%;
+  padding: 15px 20px;
+  margin: auto;
+  background-color: rgb(221, 221, 221);
+  margin-bottom: 10px;
+}
+
+.game-input-top-row-inputs input {
+  border: none;
+  outline: none;
+  margin-top: 8px;
+  width: 80%;
+  padding: 5px 10px;
+}
+
+.game-input-top-row-inputs .css {
+  width: 80%;
+  margin: auto;
+}
+
+.game-input .levels-button-row {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.game-input .level-button-box {
+  margin: auto;
+  width: 200px;
+  height: 30px;
+  display: flex;
+}
+
+.game-input .level-button-box button {
+  flex: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 12px 0;
+  position: relative;
+
+}
+
+.game-input .level-button-box button .tooltiptext {
+  display: none;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -150%;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+.game-input .level-button-box button .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.game-input .level-button-box button#hide:hover .tooltiptext {
+  display: block;
+}
+
+
+
+.game-input .level-button-box button:hover {
+  background-color: rgb(20, 20, 20);
+}
+
+.game-input .level-button-box button:nth-child(1) {
+  border-radius: 15px 0 0 15px;
+  border-right: 1px solid white;
+}
+
+
+.game-input .level-button-box button:nth-child(3) {
+  border-radius: 0 15px 15px 0;
+  border-left: 1px solid white;
+
+}
+
+.game-input .level-button-box .level-selector {
+  flex: 3;
+}
+
+.game-input .level-button-box .level-selector span {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.game-input .level-button-box .level-selector:hover span {
+  animation: animate-level-arrow 1s infinite;
+
+}
+
+.game-container .game-output .output-content {
+  width: 90%;
+  margin: auto;
+  margin-top: min(5%, 30px);
+  position: relative;
+  height:calc(98% - min(10%,50px));
+
+}
+
+
+@keyframes animate-level-arrow {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+
+}
+
+
+.sample-code{
+  margin-top: 20px;
+  border-radius: 7px;
+  padding: 15px 30px;
+  background-color: rgb(230, 230, 230);
+  user-select: none;
+  border-left: 4px solid #ea047fa9;
+}
+
+.code-output{
+  margin-top: 20px;
+  border-radius: 7px;
+  padding: 15px 30px;
+  background-color: rgb(230, 230, 230);
+
+}
+
+
+@media screen and (orientation: portrait) {
+  .game-container {
+    flex-direction: column;
+    height: 97%;
+  }
+
+  .game-container .game-output {
+    flex: 0.5;
+  }
+
+  .game-container .game-input {
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+  }
+
+  .game-container .game-output {
+    margin: 10px 0 0 0;
+  }
+
+  .game-container .game-input-content {
+    min-height: 90%;
+  }
+
+  .game-input-top-row-inputs {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .game-input-top-row-inputs input {
+    padding: 3px 7px;
+    margin-top: 5px;
+  }
+
+  .game-input .levels-button-row {
+    margin-top: 20px;
+  }
+
+  .game-input .level-button-box button#hide::before {
+    font-size: 10px;
+    border-radius: 2px;
+  }
+
+
+
+  .game-input .level-button-box {
+    width: 140px;
+    height: 24px;
+
+  }
+
+
+  .game-input .level-button-box button {
+    font-size: 12px;
+    padding: 0;
+  }
+
+
+}

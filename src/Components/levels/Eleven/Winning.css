@@ -1,0 +1,124 @@
+.winning-page-input-content {
+  /* width: min(1200px,90%) !important; */
+  /* background-color: red; */
+}
+
+.winning-page {
+  margin: 40px auto 0;
+  width: min(90%, 600px);
+  background: white;
+  padding: 30px 50px;
+  box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.4),
+    inset -4px -10px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  text-align: justify;
+}
+
+.winning-page h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  /* border: 1px solid red; */
+  /* transform: rotate(-8deg); */
+}
+
+.winning-page .party-paper {
+  user-select: none;
+  display: inline-block;
+  font-size: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.winning-page .party-paper span {
+  display: inline-block;
+  animation: wish-animation 2.7s linear;
+}
+
+@keyframes wish-animation {
+  10%,
+  30%,
+  50%,
+  70%,
+  90%,
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(30deg);
+  }
+  5%,
+  15%,
+  25%,
+  35%,
+  45%,
+  55%,
+  65%,
+  75%,
+  85%,
+  95% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.winning-page button {
+  padding: 10px 15px;
+  border-radius: 0;
+  border: none;
+  background-color: black;
+  color: white !important;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 2px solid transparent;
+}
+
+.winning-page button:hover {
+  color: black !important;
+  background: white !important;
+  border: 2px solid black;
+}
+
+.winning-page div:not(.party-paper) {
+  margin: 15px 0;
+  font-size: 15px;
+}
+.winning-page .happy-coding{
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 22px !important;
+    color: rgb(255, 0, 17);
+}
+
+.winning-page .winning-quote{
+  width: fit-content;
+  margin: 20px auto !important;
+  font-size: 16px !important;
+
+}
+
+.winning-page .editor-link{
+  text-decoration: double underline; 
+  color: navy;
+  display: inline-block;
+  /* background-color: rgba(0, 0, 0, 0.714); */
+  /* color: white; */
+  /* padding: 2px 10px; */
+  margin-left: 2px;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .winning-page button {
+    padding: 10px 13px;
+  }
+}

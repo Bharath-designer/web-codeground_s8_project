@@ -1,0 +1,70 @@
+.output-content {
+    position: relative;
+}
+
+.six-textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    min-height: 50px;
+    margin-top: 10px;
+    width: max(60%, 200px);
+    padding: 5px;
+}
+
+.six-output-container-relative {
+    position: absolute;
+}
+
+.six-container-box-relative {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    background-color: #3aafa9;
+    display: grid;
+    place-items: center;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+}
+
+
+.six-output-container-absolute {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.six-container-box-absolute {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    color: rgba(0, 0, 0, 0.466);
+    
+    /* don't include in HTML */
+    position: relative;
+}
+
+
+.six-container-box-absolute::before {
+    position: absolute;
+    content: "";
+    inset: -3px;
+    outline: 1px solid rgba(0, 0, 0, 0.233);
+
+}
+
+
+
+@media screen and (orientation: portrait) {
+
+     .six-game-output {
+        flex: 0.6 !important ;
+
+    }
+
+}

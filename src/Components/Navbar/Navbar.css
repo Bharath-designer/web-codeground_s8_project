@@ -1,0 +1,53 @@
+.home-header {
+  width: 100%;
+  margin: auto;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-header .home-header-left,
+.home-header .home-header-right {
+  flex: 1;
+}
+
+.home-header .home-header-left {
+  color: white;
+  user-select: none;
+  font-weight: bold;
+  letter-spacing: 0.61px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.home-header .home-header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-header .home-header-right button {
+  white-space: nowrap;
+  cursor: pointer;
+  color: white;
+  background: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: 1px solid white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.home-header .home-header-right button:active {
+  border-color: red;
+  transition: 0.1s;
+}
+
+
+@media screen and (orientation:portrait) {
+  
+  .home-header{
+    height: 50px;
+  }
+}

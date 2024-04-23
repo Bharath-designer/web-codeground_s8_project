@@ -1,0 +1,24 @@
+.eight-game-output{
+    flex: 1 !important;
+
+}
+
+.eight-output-content{
+    display: grid;
+    place-items: center;
+}
+
+
+
+.eight-output-wrapper{
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    background-color: #096fad;
+    transition: 0.8;
+    box-sizing: content-box;
+}
+
+.eight-input{
+    padding: 10px !important;
+}

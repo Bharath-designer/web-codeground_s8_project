@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+
+:root {
+  --whitBg: rgb(230, 230, 230);
+}
+
+
+body{
+
+  font-family: "poppins", Verdana, Geneva, Tahoma, sans-serif ;
+  font-size: 14px;
+  background-color: rgb(27, 27, 27);
+  
+}
+
+
+
+button, .remove-highlight{
+  -webkit-tap-highlight-color:transparent;
+}

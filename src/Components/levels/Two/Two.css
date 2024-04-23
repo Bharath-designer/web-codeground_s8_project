@@ -1,0 +1,16 @@
+.game-input-top-row-inputs .parentStyleTextarea, .game-input-top-row-inputs .nodeStyleTextarea {
+    border: none;
+    outline: none;
+    margin-top: 8px;
+    width: 80%;
+    padding: 5px 10px;
+    resize: none;
+    max-height: 50px;
+    box-sizing: content-box;
+    
+  }
+
+
+  .game-input-top-row-inputs .nodeStyleTextarea{
+max-height: 100px;
+  }

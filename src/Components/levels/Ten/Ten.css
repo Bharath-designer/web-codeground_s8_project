@@ -1,0 +1,29 @@
+.ten-textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: vertical;
+    max-height: 500px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+
+.ten-iframe{
+    width: 100%;
+    border: none;
+}
+
+
+.ten-output-table table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: white;
+}
+
+
+.ten-output-table table td{
+    border: 1px solid #639be9;
+    padding: 15px 5px;
+}

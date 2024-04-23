@@ -1,0 +1,33 @@
+.seven-textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: vertical;
+    max-height: 500px;
+    min-height: 100px;
+    padding: 20px;
+}
+
+
+.icard-container .seven-icard {
+    width: min(1000px, 80%);
+    background-color: white;
+    min-height: 200px;
+    z-index: 500;
+    padding: 20px;
+  }
+
+.seven-output-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.seven-iframe {
+    flex: 1;
+}
+
+.seven-video {
+    width: 100%;
+}
+
